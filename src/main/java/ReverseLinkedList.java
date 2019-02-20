@@ -19,7 +19,7 @@ public class ReverseLinkedList {
         LinkedListUtils.printList(head);
     }
 
-    private static Node reverseRecursive(Node head) {
+    public static Node reverseRecursive(Node head) { // O(n) O(n)
         if (head == null || head.next == null)
             return head;
 
@@ -34,7 +34,7 @@ public class ReverseLinkedList {
         return curr;
     }
 
-    public static Node reverseIterative(Node head) {
+    public static Node reverseIterative(Node head) { // O(n) O(1)
         if (head == null || head.next == null)
             return head;
 
