@@ -20,7 +20,7 @@ public class LinkedListUtils {
         printList(head);
     }
 
-    public static Node createLinkedList(int[] arr) {
+    public static Node createLinkedList(int[] arr) { // O(n) O(n) where n is the length of array
         Node head = new Node(arr[0]);
         Node cur = head;
 
@@ -32,12 +32,12 @@ public class LinkedListUtils {
         return head;
     }
 
-    public static void printList(Node head) {
+    public static void printList(Node head) { // O(n) O(1)
         Node cur = head;
         while(cur != null) {
             System.out.print(cur.data + "->");
             cur = cur.next;
         }
-        System.out.print("NULL");
+        System.out.println("NULL");
     }
 }
