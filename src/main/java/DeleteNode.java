@@ -17,7 +17,7 @@ public class DeleteNode {
         LinkedListUtils.printList(head);
     }
 
-    private static void deleteNode(Node node) {
+    private static void deleteNode(Node node) { // O(1) O(size of Node)
         node.data = node.next.data;
         node.next = node.next.next;
     }
