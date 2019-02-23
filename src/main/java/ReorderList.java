@@ -18,7 +18,7 @@ public class ReorderList {
         LinkedListUtils.printList(head);
     }
 
-    private static Node reorderList(Node head) {
+    private static Node reorderList(Node head) { // O(n) O(1)
         if(head == null || head.next == null)
             return head;
 

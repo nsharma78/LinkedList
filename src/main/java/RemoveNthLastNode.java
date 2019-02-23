@@ -18,7 +18,7 @@ public class RemoveNthLastNode {
         LinkedListUtils.printList(head);
     }
 
-    private static Node removeNthFromLast(Node head, int n) {
+    private static Node removeNthFromLast(Node head, int n) { // O(n) O(1) only one pass of the list
         if(head == null || head.next == null)
             return head;
 

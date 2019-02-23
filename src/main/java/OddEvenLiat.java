@@ -20,7 +20,7 @@ public class OddEvenLiat {
         LinkedListUtils.printList(head);
     }
 
-    private static Node reorderOddEven(Node head) { // O(n)
+    private static Node reorderOddEven(Node head) { // O(n) O(1)
         if(head == null || head.next == null)
             return head;
 
